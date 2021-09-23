@@ -16,7 +16,7 @@ export const AppProvider = ({ children }) => {
         shade: '#8CF691'
     })
     const [alert, setAlert] = useState()
-    const { data, error } = useSWR(`${url}pokemon/${searchTerm}`, fetcher)
+    const { data, error, isValidating } = useSWR(`${url}pokemon/${searchTerm}`, fetcher)
     const { data: abilityData } = useSWR(`${data?.abilities[0]?.ability?.url}`, fetcher)
 
     const fetchData = useCallback(async () => {
@@ -50,7 +50,7 @@ export const AppProvider = ({ children }) => {
     }, [searchTerm, fetchData, data])
     return (
         <AppContext.Provider
-            value={{ loading, pokemon, searchTerm, setSearchTerm, colors, setAlert, alert, error }}
+            value={{ loading, pokemon, searchTerm, setSearchTerm, colors, setAlert, alert, error, isValidating }}
         >
             {children}
         </AppContext.Provider>

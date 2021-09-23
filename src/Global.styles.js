@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { FaSearch } from 'react-icons/fa'
 
 export const MainContainer = styled.div`
@@ -118,4 +118,26 @@ export const Stat = styled.p`
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #414141;
+`
+const spin = keyframes`
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+`
+export const LoaderContainer = styled.div`
+    display:flex;
+    height: 480px;
+    align-items: center;
+    justify-content: center;    
+`
+export const Pokeball = styled.img`
+    height: 100px;
+    width: 100px;
+    animation-name: ${spin};
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 `
