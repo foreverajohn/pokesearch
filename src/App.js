@@ -6,8 +6,8 @@ import Svg2 from './assets/vector_2.svg'
 function App() {
   return (
     <AppContainer>
-      <img src={Svg1} style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 5 }} />
-      <img src={Svg2} style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 1, scale: 1.5 }} />
+      <img src={Svg1} alt="svg image1" style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 5 }} />
+      <img src={Svg2} alt="svg image2" style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 1, scale: 1.5 }} />
       <MainCard />
     </AppContainer>
 

@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     box-shadow: 0px 3px 5px 0px #00000033;
     z-index: 10;
     background-color: #fff;
-    align-items: center;
+    align-content: center;
 `
 
 export const Title = styled.p`
@@ -21,4 +21,23 @@ export const Title = styled.p`
     width: 100%;
     color: #414141;
     text-align: center;
+`
+
+export const TextInputContainer = styled.div`
+    width: 450px;
+    height: 56px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    border-color: #DADADA;
+    border-radius: 4px;
+    padding: 0px 10px;
+    margin: 0 auto;
+`
+
+export const TextInput = styled.input`
+    border: none;
+    outline: none;
+    font-size: 24px;
 `
