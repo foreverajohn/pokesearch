@@ -137,7 +137,7 @@ export const Pokeball = styled.img`
     height: 100px;
     width: 100px;
     animation-name: ${spin};
-    animation-duration: 5000ms;
+    animation-duration: 1000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 `
