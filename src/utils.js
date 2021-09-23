@@ -16,7 +16,7 @@ export const typeColors = (type) => {
             color: '#9CA071',
         },
         {
-            type: 'figthing',
+            type: 'fighting',
             color: '#AD2F29',
         },
         {

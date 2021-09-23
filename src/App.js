@@ -1,5 +1,5 @@
-import MainCard from "./components/MainCard";
 import styled from "styled-components";
+import MainCard from "./components/MainCard";
 import SvgComponent1 from "./components/SvgComponent1";
 import SvgComponent2 from "./components/SvgComponent2";
 import { useGlobalContext } from "./context";

@@ -3,14 +3,8 @@
 
 * {
   margin: 0;
-  max-width: 1440;
 }
 
-h4 {
-  color: #414141;
-}
-
-h4,
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -19,18 +13,4 @@ p {
 td>p {
   text-transform: capitalize;
   font-size: 14px;
-}
-
-
-h1,
-h2,
-h3 {
-  text-transform: capitalize;
-  font-family: 'Poppins';
-  color: #414141;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 500;
 }
