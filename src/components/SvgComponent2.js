@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function SvgComponent2({ width, height, color1, color2 }) {
+function SvgComponent2({ width, height, tint }) {
     return (
         <svg
             width={width}
@@ -11,7 +11,7 @@ function SvgComponent2({ width, height, color1, color2 }) {
         >
             <path
                 d="M0 1004h1441.5V0C965.314 518.626 643.677 571.095 0 359.5V1004z"
-                fill="#62E18E"
+                fill={tint}
             />
         </svg>
     )

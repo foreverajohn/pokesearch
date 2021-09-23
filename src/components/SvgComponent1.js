@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function SvgComponent1({ width, height, color1, color2 }) {
+function SvgComponent1({ width, height, shade, color }) {
     return (
         <svg
             width={1440}
@@ -24,8 +24,8 @@ function SvgComponent1({ width, height, color1, color2 }) {
                     y2={941}
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#8CF691" />
-                    <stop offset={1} stopColor="#80EF91" />
+                    <stop stopColor={color} />
+                    <stop offset={1} stopColor={shade} />
                 </linearGradient>
                 <filter
                     id="prefix__filter0_d"

@@ -23,7 +23,7 @@ export const Title = styled.p`
     text-align: center;
 `
 
-export const TextInputContainer = styled.div`
+export const TextInputContainer = styled.form`
     width: 450px;
     height: 56px;
     align-items: center;
@@ -40,4 +40,5 @@ export const TextInput = styled.input`
     border: none;
     outline: none;
     font-size: 24px;
+    width: 100%;
 `
