@@ -8,7 +8,7 @@ const Sprite = () => {
     return (
         <>
             <ThumbnailContainer>
-                <Thumbnail src={pokemon?.sprite} alt={pokemon} />
+                <Thumbnail src={pokemon?.sprite} alt={pokemon} scale={pokemon.id} />
             </ThumbnailContainer>
             <Name>No.{pokemon?.id} {pokemon?.name}</Name>
         </>

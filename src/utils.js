@@ -1,12 +1,11 @@
 import { tint, shade } from 'tint-shade-color'
 
 export const fetcher = async (...args) => {
-    try {
-        const response = await fetch(...args)
-        return response.json()
-    } catch (error) {
-        console.log(error, 'There was an error')
+    const response = await fetch(...args)
+    if (!response.ok) {
+        throw new Error('An error occurred while fetching the data.')
     }
+    return response.json()
 }
 
 export const typeColors = (type) => {

@@ -1,4 +1,4 @@
-import { MainContainer, StatsTypesSection } from "../Global.styles"
+import { MainContainer, StatsTypesSection, Title } from "../Global.styles"
 import { useGlobalContext } from '../context'
 import Header from "./Header"
 import About from "./About"
@@ -7,21 +7,25 @@ import Types from "./Types"
 import Stats from "./Stats"
 
 const MainCard = () => {
-    const { searchTerm, loading } = useGlobalContext()
+    const { searchTerm, loading, alert, error } = useGlobalContext()
 
     return (
         <MainContainer>
             <Header />
-            {searchTerm && !loading && (
-                <>
-                    <Sprite />
-                    <About />
-                    <StatsTypesSection>
-                        <Types />
-                        <Stats />
-                    </StatsTypesSection>
-                </>
-            )}
+            {alert || error ? (
+                <Title>Sorry, Pokemon not available!</Title>
+            ) :
+                searchTerm && !loading && (
+                    <>
+                        <Sprite />
+                        <About />
+                        <StatsTypesSection>
+                            <Types />
+                            <Stats />
+                        </StatsTypesSection>
+                    </>
+                )
+            }
         </MainContainer >
     )
 }

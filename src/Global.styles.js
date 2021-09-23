@@ -30,7 +30,7 @@ export const TextInput = styled.input`
 `
 export const SearchIcon = styled(FaSearch)`
     height: 48px; 
-    color: #00000099; 
+    color: #414141;
     margin-right: 8px; 
     cursor: pointer;
 `
@@ -53,7 +53,7 @@ export const ThumbnailContainer = styled.div`
     display: flex;
 `
 export const Thumbnail = styled.img`
-    height: 120px; 
+    height: ${({ scale }) => (scale > 649 ? '172px' : '120px')} ; 
     margin-top: 40px; 
 `
 export const Name = styled.h1`
@@ -91,6 +91,9 @@ export const TypesSection = styled.div`
 export const Type = styled.p`
     text-transform: capitalize; 
     display: inline-flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #414141;
 `
 export const StatsSection = styled.div`
     height: 200px; 
@@ -112,4 +115,7 @@ export const Stat = styled.p`
     text-transform: capitalize;
     font-size: 14px;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #414141;
 `
