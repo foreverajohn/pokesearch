@@ -1,13 +1,13 @@
 import MainCard from "./components/MainCard";
 import styled from "styled-components";
-import Svg1 from './assets/vector_1.svg'
-import Svg2 from './assets/vector_2.svg'
+import SvgComponent1 from "./components/SvgComponent1";
+import SvgComponent2 from "./components/SvgComponent2";
 
 function App() {
   return (
     <AppContainer>
-      <img src={Svg1} alt="svg image1" style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 5 }} />
-      <img src={Svg2} alt="svg image2" style={{ height: "100%", color: 'blue', position: ' absolute', zIndex: 1, scale: 1.5 }} />
+      <SvgComponent1 width={1440} height='100%' />
+      <SvgComponent2 width={1440} height='100%' />
       <MainCard />
     </AppContainer>
 
@@ -21,5 +21,6 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  flex: 1;
+  position: relative;
+  background-color: #fff;
 `

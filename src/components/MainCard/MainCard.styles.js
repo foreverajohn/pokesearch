@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-    height: 719px;
+    min-height: 719px;
     width: 765px;
     box-shadow: 0px 3px 5px 0px #00000033;
     z-index: 10;
@@ -29,7 +29,7 @@ export const TextInputContainer = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    border: 2px solid;
+    border: 1px solid;
     border-color: #DADADA;
     border-radius: 4px;
     padding: 0px 10px;
