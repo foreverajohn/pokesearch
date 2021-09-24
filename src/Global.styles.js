@@ -148,7 +148,6 @@ export const Type = styled.p`
 export const StatsSection = styled.div`
     height: 200px; 
     width: 30%; 
-    margin-right: 24px;
     @media screen and (max-width: 769px) {
         height: 100px; 
         width: 100%;
