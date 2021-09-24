@@ -68,6 +68,9 @@ export const Title = styled.p`
     width: 100%;
     color: #414141;
     text-align: center;
+    @media screen and (max-width: 769px) {
+        font-size: 24px;
+    }
 `
 export const ThumbnailContainer = styled.div`
     width: 100%; 
@@ -84,6 +87,9 @@ export const Name = styled.h1`
     color: #414141;
     text-align: center;
     margin-top: 16px;
+    @media screen and (max-width: 769px) {
+        font-size: 18px;
+    }
 `
 export const Subtitle = styled.h3`
     text-transform: capitalize;
@@ -91,6 +97,9 @@ export const Subtitle = styled.h3`
     color: #414141;
     font-weight: 500;
     font-size: 24px;
+    @media screen and (max-width: 769px) {
+        font-size: 18px;
+    }
 `
 export const AboutSection = styled.div`
     margin-inline: 24px;
@@ -103,6 +112,9 @@ export const Bio = styled.p`
     font-weight: 400; 
     font-family: Open Sans; 
     font-size: 18px;
+    @media screen and (max-width: 769px) {
+        font-size: 14px;
+    }
 `
 export const StatsTypesSection = styled.div`
     display: flex; 
@@ -110,7 +122,8 @@ export const StatsTypesSection = styled.div`
     margin-inline: 24px;
     @media screen and (max-width: 769px) {
         justify-content: center;
-        margin-bottom: 32px; 
+        margin-top: 16px; 
+        margin-bottom: 16px; 
         display: block;
         margin-inline: 32px;
     }
@@ -119,7 +132,7 @@ export const TypesSection = styled.div`
     height: 200px; 
     width: 70%;
     @media screen and (max-width: 769px) {
-        height: 100px; 
+        height: 80px; 
     }
 `
 export const Type = styled.p`
@@ -128,6 +141,9 @@ export const Type = styled.p`
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #414141;
+    @media screen and (max-width: 769px) {
+        font-size: 14px;
+    }
 `
 export const StatsSection = styled.div`
     height: 200px; 
