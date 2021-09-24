@@ -3,14 +3,22 @@ import { FaSearch } from 'react-icons/fa'
 
 export const MainContainer = styled.div`
     min-height: 719px;
-    width: 765px;
+    width: 50%;
     box-shadow: 0px 3px 5px 0px #00000033;
     z-index: 10;
     background-color: #fff;
     align-content: center;
+    @media screen and (max-width: 960px) {
+        width: 80vw;
+        height: 100vh;
+    }
+    @media screen and (max-width: 769px) {
+        width: 100vw;
+        height: 100vh;
+    }
 `
 export const TextInputContainer = styled.form`
-    width: 450px;
+    width: 50%;
     height: 56px;
     align-items: center;
     display: flex;
@@ -20,6 +28,14 @@ export const TextInputContainer = styled.form`
     border-radius: 4px;
     padding: 0px 10px;
     margin: 0 auto;
+    @media screen and (max-width: 960px) {
+        padding: 0px 4px;
+        height: 40px;
+    }
+    @media screen and (max-width: 769px) {
+        padding: 0px 4px;
+        height: 32px;
+    }
 `
 export const TextInput = styled.input`
     border: none;
@@ -27,6 +43,12 @@ export const TextInput = styled.input`
     font-size: 24px;
     width: 100%;
     font-family: Poppins;
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 769px) {
+        font-size: 16px;
+    }
 `
 export const SearchIcon = styled(FaSearch)`
     height: 48px; 
@@ -72,6 +94,9 @@ export const Subtitle = styled.h3`
 `
 export const AboutSection = styled.div`
     margin-inline: 24px;
+    @media screen and (max-width: 769px) {
+        margin-inline: 32px;
+    }
 `
 export const Bio = styled.p`
     text-align: justify; 
@@ -83,10 +108,19 @@ export const StatsTypesSection = styled.div`
     display: flex; 
     margin-top: 64px; 
     margin-inline: 24px;
+    @media screen and (max-width: 769px) {
+        justify-content: center;
+        margin-bottom: 32px; 
+        display: block;
+        margin-inline: 32px;
+    }
 `
 export const TypesSection = styled.div`
     height: 200px; 
     width: 70%;
+    @media screen and (max-width: 769px) {
+        height: 100px; 
+    }
 `
 export const Type = styled.p`
     text-transform: capitalize; 
@@ -99,9 +133,16 @@ export const StatsSection = styled.div`
     height: 200px; 
     width: 30%; 
     margin-right: 24px;
+    @media screen and (max-width: 769px) {
+        height: 100px; 
+        width: 100%;
+    }
 `
 export const StatsTable = styled.table`
     width: 100%;
+    @media screen and (max-width: 769px) {
+         
+    }
 `
 export const SectionTitle = styled.h4`
     font-family: 'Open Sans', sans-serif;

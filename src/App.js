@@ -8,8 +8,8 @@ function App() {
   const { colors: { shade, color, tint } } = useGlobalContext()
   return (
     <AppContainer>
-      <SvgComponent1 width={1440} height='100%' shade={shade} color={color} />
-      <SvgComponent2 width={1440} height='100%' tint={tint} />
+      <SvgComponent1 width={'100vw'} height={'100vh'} shade={shade} color={color} />
+      <SvgComponent2 width={'100vw'} height={'100vh'} tint={tint} />
       <MainCard />
     </AppContainer>
 
@@ -23,6 +23,7 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width:100vw;
   position: relative;
   background-color: #fff;
 `

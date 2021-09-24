@@ -7,7 +7,7 @@ function SvgComponent1({ width, height, shade, color }) {
             height={821}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={{ position: 'absolute', zIndex: 2, bottom: 0, objectFit: 'contain' }}
+            style={{ position: 'absolute', zIndex: 2, bottom: 0, objectFit: 'fill' }}
         >
             <g filter="url(#prefix__filter0_d)">
                 <path
